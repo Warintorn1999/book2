@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CBD8E0"
+    tools:context=".InsertActivity">
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6ECDDA"
+        android:text="Add Book"
+        android:textStyle="bold"
+        android:fontFamily='Signika'
+        android:textColor="#494D4D"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Input ID "
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edt_id"
+                android:layout_width="234dp"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Input Name"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Input Writer"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/edt_writer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Input Publisher"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/edt_pub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Input img"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/edt_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:onClick="addStudent"
+        android:layout_below="@+id/table"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:text="ADD"
+        android:background="#BDEB87" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table"
+        android:onClick="resetStudent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/btnAdd"
+        android:background="#F38982"
+        android:text="RESET"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

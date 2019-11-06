@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#CBD8E0"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logoaaaa"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true">
+
+    </ImageView>
+    <Button
+        android:id="@+id/btn_login"
+        android:text="LOGIN"
+        android:textStyle="bold"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#5BCC47"
+        android:fontFamily='Signika'
+        android:textSize="20dp"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginLeft="109dp"
+        android:text="Search Book"
+        android:textStyle="bold"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#00BCD4"
+        android:fontFamily='Signika'
+        android:textSize="20dp"
+        />
+
+</RelativeLayout>

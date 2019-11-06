@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CBD8E0"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logoaaaa"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/username_et"
+        android:layout_marginLeft="50dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:hint="UserName"/>
+
+    <EditText
+        android:id="@+id/password_et"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_width="300dp"
+        android:hint="Password"
+        android:layout_below="@id/username_et"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#00E676"
+        android:layout_below="@id/password_et"
+        android:text="LOGIN"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        />
+
+
+</RelativeLayout>

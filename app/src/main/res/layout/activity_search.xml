@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CBD8E0"
+    tools:context=".SearchActivity">
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <EditText
+                android:id="@+id/edt_search"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="Input Name"
+                android:layout_marginTop="20dp"
+                android:fontFamily='Signika'/>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:id="@+id/btnbosearch"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#49ABD8"
+        android:fontFamily='Signika'
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/table"
+        android:textSize="20dp"
+        android:layout_marginLeft="100dp"
+        android:textStyle="bold"
+        android:text="Search"
+        android:onClick="clickSearch"
+        />
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book List"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily='Signika'
+        android:layout_marginTop="20dp"
+        android:layout_below = "@+id/btnbosearch"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily='Signika'
+        android:layout_below = "@+id/text1"/>
+
+</RelativeLayout>

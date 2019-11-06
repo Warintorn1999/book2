@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#CBD8E0"
+    android:orientation="vertical"
+   >
+
+    <TextView
+        android:id="@+id/tv_id1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="ID :"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/tv_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Name :"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/tv_id1"/>
+    <TextView
+        android:id="@+id/tv_age1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Writer :"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tv_name1" />
+    <TextView
+        android:id="@+id/tv_pub1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date borrow :"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/tv_age1" />
+
+    <TextView
+        android:id="@+id/tv_date1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date return :"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/tv_age1" />
+</RelativeLayout>

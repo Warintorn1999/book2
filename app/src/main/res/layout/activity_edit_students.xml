@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D9E0E4"
+    tools:context=".EditStudentsActivity">
+
+    <TextView
+        android:fontFamily='Signika'
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="-7dp"
+        android:text="Edit OR Delete Book"
+        android:textAlignment="center"
+        android:textColor="#2395C5"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:fontFamily='Signika'
+        android:id="@+id/table"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:fontFamily='Signika'
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Input ID "
+                android:textSize="20sp" />
+
+            <EditText
+                android:fontFamily='Signika'
+                android:id="@+id/edit_id"
+                android:layout_width="237dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="20sp" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:fontFamily='Signika'
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Input Name"
+                android:textSize="20sp" />
+            <EditText
+                android:fontFamily='Signika'
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="20sp"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:fontFamily='Signika'
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Input Writer"
+                android:textSize="20sp" />
+            <EditText
+                android:fontFamily='Signika'
+                android:id="@+id/edit_writer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="20sp"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:fontFamily='Signika'
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Input Publisher"
+                android:textSize="20sp" />
+            <EditText
+                android:fontFamily='Signika'
+                android:id="@+id/edit_pub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="20sp"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:fontFamily='Signika'
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Input img"
+                android:textSize="20sp" />
+
+            <EditText
+                android:fontFamily='Signika'
+                android:id="@+id/edit_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+
+    <Button
+        android:fontFamily='Signika'
+        android:layout_below="@+id/table"
+        android:id="@+id/btnUpdate"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#00E676"
+        android:textSize="20sp"
+        android:text="Save"
+        android:layout_marginLeft="70dp"
+        android:onClick="saveStudent" />
+
+    <Button
+        android:fontFamily='Signika'
+        android:id="@+id/btnDelete"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/btnUpdate"
+        android:background="#F38982"
+        android:text="Delete"
+        android:textSize="20sp" />
+
+</RelativeLayout>
